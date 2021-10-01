@@ -1,5 +1,5 @@
-message = input("> ")
-Words = message.split(' ')
+def emoji_convertor(message)
+    Words = message.split(' ')
 emojis = {
     ":(": "🙁",
     ":)": "😊",
@@ -15,7 +15,11 @@ emojis = {
 }
 output = " "
 for x in Words:
-    print(emojis.get(x, x), end="" + " ")
+    output += emojis.get(x, x) + " "
+
+message = input("> ")
+print(emoji_convertor(message))
+
 
 
 
