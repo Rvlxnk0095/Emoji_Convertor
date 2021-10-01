@@ -16,6 +16,7 @@ emojis = {
 output = " "
 for x in Words:
     output += emojis.get(x, x) + " "
+    return output
 
 message = input("> ")
 print(emoji_convertor(message))
